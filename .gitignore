@@ -1,0 +1,22 @@
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+*.o
+*.obj
+*.so
+*.a
+*.dll
+*.exe
+*.dSYM/
+*.log
+*.tmp
+*.user
+.idea/
+.vscode/
+# unit test output
+Testing/
+*.gcda
+*.gcno
+coverage/
