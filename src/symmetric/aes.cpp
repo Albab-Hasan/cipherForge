@@ -1,11 +1,9 @@
-// AES-256 Implementation: A Journey of Confusion and Enlightenment
+// AES-256 Implementation: A Journey of Trying to make something cool
 //
 // This implementation is the result of:
-// - Countless hours staring at cryptography specs
-// - Multiple "why isn't this working?" moments
-// - Debugging sessions that lasted way too long
+// - not sleeping for multiple days
 //
-// Inspired by NIST FIPS 197 and many sleepless nights
+// Inspired by NIST FIPS 197
 
 #include "cf/aes.hpp"
 
@@ -167,11 +165,9 @@ namespace cf
     // Initial key schedule generation
     // Warning: Lots of bit manipulation ahead
 
-    // First 8 words are straightforward
     for (int i = 0; i < 8; ++i)
     {
       // Manually constructing 32-bit words
-      // Because std::bit_cast felt too magical
       roundKeys_[i] = (static_cast<uint32_t>(key[i * 4]) << 24) |
                       (static_cast<uint32_t>(key[i * 4 + 1]) << 16) |
                       (static_cast<uint32_t>(key[i * 4 + 2]) << 8) |
@@ -211,7 +207,6 @@ namespace cf
   AES256::~AES256()
   {
     // Overwrite sensitive key material
-    // Multiple passes for extra paranoia
     volatile uint32_t *keys = roundKeys_.data();
     for (auto &key : roundKeys_)
     {
