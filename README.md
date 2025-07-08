@@ -1,44 +1,52 @@
-# cipherForge
+# CipherForge
 
-A place where I'm teaching myself real cryptography by writing everything from scratch. Just me, the specs, and a lot of "why doesn't this compile?" moments.
+A personal playground for understanding cryptography by building from scratch. Expect messy commits, learning curves, and probably a few spectacular bugs.
 
-## Why bother?
+## Why Am I Doing This?
 
-1. I learn best by building stuff. Turning the AES spec into working C++ feels more useful than skimming blog posts.
-2. Having a public repo forces me to keep the code readable (or at least not embarrassing).
-3. It's nice to have a personal toolkit for experiments and demos.
+- I'm tired of copy-pasting crypto code without understanding it
+- Academic papers are great, but nothing beats implementation
+- Learning how things *actually* work under the hood
 
-## Roadmap / progress
+## Current State of Chaos 🚧
 
-| Phase | Task | Status |
-|-------|------|--------|
-| 1 | AES-256 (ECB) + test vector | done |
-| 1 | CBC / CTR / GCM modes | in progress ✓ |
-| 1 | ChaCha20 | todo |
-| 1 | SHA-256, SHA-3, HMAC | todo |
-| 2 | RSA (keygen, encrypt, sign) | todo |
-| 2 | ECC (Curve25519, secp256k1) | todo |
-| 3 | Custom secure messaging protocol | todo |
-| 4 | Cryptanalysis tools | todo |
+| Phase | Task | Status | Pain Level |
+|-------|------|--------|------------|
+| 1 | AES-256 (ECB) | done | 😅 Survived |
+| 1 | CBC / CTR modes | mostly working | 🤯 Brain melting |
+| 1 | ChaCha20 | staring at spec | 😱 Intimidating |
+| 1 | SHA-256 | sketched out | 🤔 Thinking hard |
+| 2 | RSA | dreaming about it | 💭 Wishful thinking |
+| 3 | Secure messaging | distant future | 🌈 Optimistic |
 
-The table will grow (and hopefully turn greener) as I tick things off.
-
-## Build instructions
+## Build Instructions (Hopefully)
 
 ```bash
-# Linux / macOS
+# Pray to the compiler gods
 mkdir build && cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
 make -j$(nproc)
+
+# Run tests (aka see what broke)
 ctest --output-on-failure
 ```
 
-CMake downloads GoogleTest automatically; you don't need anything else besides a C++17 compiler.
+## Contributing / Sanity Checks
 
-## Contributing / feedback
-
-Spot a bug or something that looks suspiciously slow? File an issue or open a pull request. I'm still learning, so explanations are welcome.
+- Spot a bug? You're probably right.
+- Want to improve something? Please do!
+- Cryptography experts: Be gentle, I'm learning 🙏
 
 ## Disclaimer
 
-This code is for study and experimentation. Don't rely on it for production security.
+**SERIOUSLY:** This is a learning project. Do NOT use this for anything serious.
+I repeat: DO. NOT. USE. IN. PRODUCTION.
+
+Seriously. I mean it. 🚨
+
+## Learning Resources That Saved Me
+
+- NIST FIPS 197 (AES Spec)
+- "Understanding Cryptography" by Paar & Pelzl
+- Countless StackOverflow rabbit holes
+- Coffee ☕ and patience 🧘‍♀️
