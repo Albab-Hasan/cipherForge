@@ -25,7 +25,7 @@ TEST(AES256, FIPSVectorEncryptDecrypt)
       0x06, 0x4b, 0x5a, 0x7e,
       0x3d, 0xb1, 0x81, 0xf8};
 
-  cf::AES256 aes(std::span<const uint8_t, 32>(key));
+  cf::AES256 aes{std::span<const uint8_t, 32>(key)};
 
   std::array<uint8_t, 16> ciphertext{};
   aes.encrypt_block(plaintext, ciphertext);

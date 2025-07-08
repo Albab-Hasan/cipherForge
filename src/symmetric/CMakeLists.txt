@@ -1,1 +1,1 @@
-target_sources(cipherforge PRIVATE aes.cpp)
+target_sources(cipherforge PRIVATE aes.cpp modes.cpp)
