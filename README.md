@@ -13,7 +13,7 @@ A place where I'm teaching myself real cryptography by writing everything from s
 | Phase | Task | Status |
 |-------|------|--------|
 | 1 | AES-256 (ECB) + test vector | done |
-| 1 | CBC / CTR / GCM modes | in progress |
+| 1 | CBC / CTR / GCM modes | in progress ✓ |
 | 1 | ChaCha20 | todo |
 | 1 | SHA-256, SHA-3, HMAC | todo |
 | 2 | RSA (keygen, encrypt, sign) | todo |
