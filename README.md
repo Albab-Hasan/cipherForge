@@ -1,6 +1,6 @@
 # CipherForge
 
-A personal playground for understanding cryptography by building from scratch. Expect messy commits, learning curves, and probably a few lot of bugs.
+A personal playground for understanding cryptography by building from scratch.
 
 ## Why Am I Doing This?
 
