@@ -6,7 +6,7 @@ A personal playground for understanding cryptography by building from scratch. E
 
 - I'm tired of copy-pasting crypto code without understanding it
 - Academic papers are great, but nothing beats implementation
-- Learning how things *actually* work under the hood
+- Learning how things work under the hood
 
 ## Current State of the project
 
@@ -42,9 +42,9 @@ ctest --output-on-failure
 
 ## Disclaimer
 
-**SERIOUSLY:** This is a learning project. Do NOT use this for anything serious.
+This is a learning project. Do NOT use this for anything serious.
 
-## Learning Resources That Saved Me
+## Learning Resources That Helped Me
 
 - NIST FIPS 197 (AES Spec)
 - "Understanding Cryptography" by Paar & Pelzl
